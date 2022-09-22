@@ -54,6 +54,7 @@ int main()
 			cout << "\nIndex to remove: ";
 			cin >> valueIn;
 			arrayIn = removeValue(valueIn, arrayIn, SIZE);
+			SIZE--;
 			func = "";
 		}
 		cout << "\nWhat function would you like to run? Type 'exit' to close \n";

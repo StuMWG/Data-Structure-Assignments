@@ -42,11 +42,11 @@ int* removeValue(int index, int arrayIn[], int size) {
 	int* arr = new int[size];
 	if (index > 0 && index < size) {
 		for (int i = 0; i < size; i++) {
-			if (i != index) {
+			if (i < index) {
 				arr[i] = arrayIn[i];
 			}
 			else {
-				arr[i] = -1;
+				arr[i] = arrayIn[i+1];
 			}
 
 		}
